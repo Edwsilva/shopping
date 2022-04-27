@@ -30,6 +30,7 @@ function App () {
   }, [selectedProducts])
 
   function handleToggle (id, checked, name) {
+    console.log(name)
     const newProducts = products.map(product =>
         product.id === id
           ? { ...product, checked: !product.checked }
